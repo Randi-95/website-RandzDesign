@@ -1,0 +1,347 @@
+:root {
+  --kedua: #00d177;
+  --font: #FFFFFF;
+  --utama: #0f8854;
+}
+
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:'Poppins', sans-serif;
+  background-color: #FFFDD0;
+}
+
+header .navbar{
+  display: flex;
+  
+  justify-content: space-between;
+  background-color: var(--utama);
+  padding: 2%;
+  padding-left: 1%;
+  padding-right: 5%;
+  border-bottom: 3px solid var(--kedua);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+  
+}
+
+.list-nav li{
+  display: inline-block;
+  justify-content: space-between;
+  white-space: nowrap;
+  padding: 0 1rem;
+}
+
+.navbar ul, li a{
+  color: var(--font);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.navbar .list-nav ul, li a:hover{
+  color: var(--kedua);
+}
+
+.navbar-nama{
+  color: var(--font);
+  font-size: 1.6;
+  font-weight: 800;
+}
+
+.navbar a span{
+  color: var(--kedua);
+}
+
+.navbar a{
+  padding-left: 4%;
+}
+
+.foto aside img{
+max-width: 300px;
+}
+
+
+
+
+.content .home{
+display: flex;
+min-height: 100vh;
+align-items: center;
+padding: 2%;
+justify-content: space-around;
+}
+
+.content .isi {
+line-height: 1;
+}
+
+.content .isi h2 {
+color: var(--utama);
+font-size: 1.2rem;
+
+}
+
+.content .isi h1{
+color: #3a634a;
+font-size: 2.5rem;
+padding-top: 0.5rem;
+}
+
+.content .isi p{
+line-height: 1.5;
+font-weight: 300;
+padding-top: 0.5rem;
+max-width: 30rem;
+font-size: 0.8rem;
+}
+
+.content .isi .tombol {
+background-color: var(--utama);
+border-radius: 1.3rem;
+display: flex;
+display: inline-block;
+padding: 1rem;
+margin-top: 1.2rem;
+}
+
+.content .isi .tombol a{
+color: #FFFFFF;
+font-weight: 800;
+font-size: 0.8rem;
+}
+
+
+.about{
+background-color: var(--utama);
+min-height: 100vh;
+padding-top: 5rem;
+}
+
+.isi_about {
+padding: 0 5%;
+}
+
+.isi_about h2{
+text-align: center;
+padding-bottom: 1rem;
+font-size: 2.5rem;
+font-weight: 800;
+color: var(--font);
+}
+
+.isi_about p{
+color: #FFFDD0;
+line-height: 1.1rem;
+font-size: 0.9rem;
+font-weight: 600;
+padding-top: 2rem;
+}
+
+
+.isi_produk {
+max-width: 1200px;
+min-height: 100vh;
+padding: 5%;
+}
+
+.isi_produk h2{
+text-align: center;
+padding-bottom: 1rem;
+font-size: 2.5rem;
+font-weight: 800;
+color: var(--utama);
+padding-top: 2rem;
+}
+
+.isi_produk h4{
+color: var(--utama);
+}
+
+.isi_produk p{
+color: var(--utama);
+line-height: 1.1rem;
+font-size: 0.9rem;
+font-weight: 600;
+padding-top: 2rem;
+}
+
+.footer-content {
+background-color: var(--utama);
+font-size: 0.8rem;
+display: flex;
+width: 100%;
+padding: 2%;
+justify-content: center;
+}
+
+.footer-logo{
+color: var(--font);
+padding-right: 15%;
+}
+
+.footer-logo h3{
+font-size: 1rem;
+text-align: center;
+padding-bottom: 1rem;
+
+}
+
+.footer-logo .list-footer{
+display: flex;
+list-style: none;
+}
+
+.footer-nav {
+color: var(--font);
+
+}
+
+.footer-nav .list-footer{
+list-style: none;
+}
+
+.footer-nav h3 {
+font-size: 1rem;
+padding-bottom: 1rem;
+}
+
+
+.footer-email {
+color: var(--font);
+padding-left: 10%;
+}
+
+.footer-email .list-footer {
+list-style: none;
+}
+
+.footer-email .list-footer li{
+padding-bottom: 2px;
+}
+
+
+.footer-email .list-footer .ikon-kontak{
+padding-top: 10px;
+}
+
+.footer-email .list-footer .ikon-email{
+padding-top: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1366px) {
+  html {
+    font-size: 95%;
+  }
+
+  
+}
+
+
+@media (max-width:1300px) {
+  html {
+    font-size: 95%;
+  }
+}
+
+@media (max-width:1200px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+
+
+@media (max-width:750px) {
+  html {
+    font-size: 90%;
+  }
+
+}
+
+@media (max-width:700px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+
+
+@media (max-width:450px) {
+    html {
+      font-size: 70%;
+    }
+
+.content .home {
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-top: 30%;
+}
+
+.isi_about p{
+  font-weight: 300;
+}
+
+.home aside img{
+  flex-grow: 1;
+  order: 1;
+  padding-left: 20%;
+  max-width: 80%;
+}
+
+.content .isi{
+  flex-grow: 1;
+  order: 2;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+}
+
+.footer-content {
+  flex-wrap: wrap;
+}
+
+}
+
+
+
+
+@media (max-width:400px) {
+  html{
+    font-size: 60%;
+  }
+}
